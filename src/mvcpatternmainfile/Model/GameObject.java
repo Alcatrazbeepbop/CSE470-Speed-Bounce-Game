@@ -14,12 +14,15 @@ import javafx.scene.Node;
 import javafx.scene.shape.Shape;
 
 public class GameObject{       
-    private Node view;
-    private Point2D velocity = new Point2D(0, 0);
-    private boolean alive = true;
+    public Node view;
+    public Point2D velocity = new Point2D(0, 0);
+    public boolean alive = true;
     public double accx;
     public double accy;
-
+    
+    public GameObject(){
+    }
+    
     public GameObject(Node view) {
         this.view = view;
     }
